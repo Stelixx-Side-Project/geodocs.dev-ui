@@ -1,4 +1,81 @@
 [
+    {
+    "version": "3.1.11",
+    "createdAt": 1762193850,
+    "fixes": [
+      "In firefox 144+, users were not able to join the meetings, due to the browser's datachannel behavior change.\n Error: `x.data.arrayBuffer is not a function`"
+    ]
+  },
+  {
+    "version": "3.1.8-3.1.9-3.1.10",
+    "createdAt": "1761120976",
+    "fixes": [
+      "(No customer facing changes - This release contains internal fixes)"
+    ]
+  },
+  {
+    "version": "3.1.7",
+    "createdAt": 1756203032,
+    "fixes": [
+      "Prevents speaker change events from being emitted when the active speaker does not change.",
+      "Addressed a behavioral change in microphone switching on recent versions of Google Chrome.",
+      "Added `deviceInfo` logs to improve debugging capabilities for React Native.",
+      "Fixed an issue that queued multiple media consumers for the same peer, optimizing resource usage."
+    ]
+  },
+  {
+    "version": "3.1.6",
+    "createdAt": 1755149549,
+    "enhancements": [
+      "Internal changes to make debugging, of media consumption issues, easier and faster"
+    ]
+  },
+  {
+    "version": "3.1.5",
+    "createdAt": 1754285720,
+    "fixes": [
+      "Improved React Native support for AudioActivityReporter with proper audio sampling",
+      "Resolved issue preventing users from creating polls",
+      "Fixed issue where leaving a meeting took more than 20 seconds"
+    ]
+  },
+  {
+    "version": "3.1.4", 
+    "createdAt": 1752726160,
+    "fixes": [
+      "Livestream feature is now available to all users without additional configuration",
+      "Fixed livestream stage functionality where hosts were not consuming peer videos upon participant's stage join",
+      "Resolved issues with viewer joins and leaves in livestream stage"
+    ]
+  },
+  {
+    "version": "3.1.3",
+    "createdAt": 1751980688,
+    "fixes": [
+      "Fixed issue where users could not enable video mid-meeting if they joined without video initially"
+    ]
+  },
+  {
+    "version": "3.1.2",
+    "createdAt": 1751468859,
+    "fixes": [
+      "Fixed edge case in large meetings where existing participants could not hear or see newly joined users"
+    ]
+  },
+  {
+    "version": "3.1.0-3.1.1",
+    "createdAt": 1751276191,
+    "features": [
+      "Added methods to toggle self tile visibility",
+      "Introduced broadcast functionality across connected meetings (breakout rooms)"
+    ],
+    "new_api": [
+      "Broadcast messages across meetings: ```meeting.participants.broadcastMessage('<message_type>', { message: 'Hi' }, { meetingIds: ['<connected_meeting_id>'] });```"
+    ],
+    "enhancements": [
+      "Added support for multiple meetings on the same page in RealtimeKit Core SDK"
+    ]
+  },
   {
     "version": "2.4.5",
     "createdAt": 1744885445,
