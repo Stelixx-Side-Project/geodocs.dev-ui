@@ -13,6 +13,7 @@ The following is a set of guidelines for contributing. These are mostly guidelin
 2. [What should I know before I get started?](#what-should-i-know-before-i-get-started)
 3. [How Can I contribute?](#how-can-i-contribute)
 4. [Code Contribution](#code-contribution)
+5. [Release and Documentation Cadence](#release-and-documentation-cadence)
 
 # Guidelines
 
@@ -97,3 +98,15 @@ Others will give constructive feedback.
 This is a time for discussion and improvements,
 and making the necessary changes will be required before we can
 merge the contribution.
+
+### Release and Documentation Cadence
+
+For release sequencing and documentation standards, follow:
+
+- [./_docs/RELEASE-CADENCE.md](./_docs/RELEASE-CADENCE.md)
+
+In short:
+
+1. Work on a feature branch.
+2. Run `npm run lint`, `npm run typecheck`, and `npm run build`.
+3. Run `/document-release` before merge to keep docs in sync with shipped changes.

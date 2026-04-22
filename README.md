@@ -89,6 +89,7 @@ npm run spell-check
 - [CHANGELOG](./CHANGELOG.md)
 - [CONTRIBUTING](./CONTRIBUTING.md)
 - [Internal docs index](./_docs/README.md)
+- [Release cadence standard](./_docs/RELEASE-CADENCE.md)
 - [Foundation](./_docs/GEODOCS-FOUNDATION.md)
 - [Taxonomy schema](./_docs/GEODOCS-TAXONOMY-SCHEMA.md)
 
