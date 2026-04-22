@@ -17,6 +17,7 @@
 
 - Added Cloudflare deployment configuration and build/deploy scripts.
 - Updated webpack filtering behavior for noisy browser extension runtime errors during local development.
+- Standardized release and document update cadence in `_docs/RELEASE-CADENCE.md` with links from README and CONTRIBUTING.
 
 # [1.20.0](https://github.com/dyte-in/docs/compare/v1.19.1...v1.20.0) (2022-07-26)
 
