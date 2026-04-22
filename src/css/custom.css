@@ -6,6 +6,7 @@
 */
 @import './design-tokens.css';
 @import './homepage.css';
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Text:ital@0;1&family=Work+Sans:wght@300;400;500;600;700&display=swap');
 
 /* ============================================
    FONT FACES
@@ -88,7 +89,9 @@
   }
 
   body {
-    @apply font-sans antialiased;
+    @apply antialiased;
+    font-family: var(--ds-font-body-ui);
+    color: var(--ds-text-primary);
   }
 
   .homepage a {
@@ -241,6 +244,14 @@ body {
   /* Design system z-index */
   --ifm-z-index-fixed: var(--ds-z-fixed);
   --ifm-z-index-dropdown: var(--ds-z-dropdown);
+
+  /* Semantic surfaces for light theme */
+  --ds-surface-page: var(--ds-color-pure-white);
+  --ds-surface-elevated: #f8fbfb;
+  --ds-surface-muted: #f1f5f4;
+  --ds-text-primary: var(--ds-color-black);
+  --ds-text-secondary: var(--ds-color-cool-gray);
+  --ds-border-strong: var(--ds-color-silver-teal);
 }
 
 /* Dark mode - forest aesthetic */
@@ -259,6 +270,64 @@ html[data-theme='dark'] {
   --ifm-color-content: var(--ds-color-light-input);
 
   --docusaurus-highlighted-code-line-bg: rgba(28, 45, 56, 0.5);
+
+  /* Semantic surfaces for dark theme */
+  --ds-surface-page: var(--ds-color-forest-black);
+  --ds-surface-elevated: var(--ds-color-deep-teal);
+  --ds-surface-muted: #263945;
+  --ds-text-primary: var(--ds-color-pure-white);
+  --ds-text-secondary: var(--ds-color-light-input);
+  --ds-border-strong: var(--ds-color-teal-gray);
+}
+
+/* ============================================
+   GLOBAL THEME SURFACES (LIGHT + DARK)
+   ============================================ */
+
+body,
+.main-wrapper {
+  background-color: var(--ds-surface-page);
+  color: var(--ds-text-primary);
+}
+
+.theme-doc-sidebar-container,
+.theme-doc-toc-desktop,
+.pagination-nav__link,
+.theme-admonition,
+.table-of-contents,
+.menu,
+.navbar-sidebar {
+  background-color: var(--ds-surface-elevated);
+  border-color: var(--ds-border-strong);
+}
+
+.pagination-nav__link,
+.theme-admonition,
+.table-of-contents,
+.theme-doc-sidebar-menu {
+  border-radius: var(--ds-radius-standard);
+}
+
+.markdown h1,
+.markdown h2,
+.markdown h3,
+.markdown h4 {
+  color: var(--ds-text-primary);
+}
+
+.markdown p,
+.markdown li,
+.table-of-contents__link {
+  color: var(--ds-text-secondary);
+}
+
+html[data-theme='dark'] .menu__link:hover,
+html[data-theme='dark'] .table-of-contents__link:hover {
+  color: var(--ds-color-mongodb-green);
+}
+
+html[data-theme='dark'] .pagination-nav__link:hover {
+  border-color: var(--ds-color-mongodb-green);
 }
 
 /* ============================================
@@ -287,9 +356,28 @@ pre.prism-code {
 
 .navbar__item,
 .menu__link {
+  font-family: var(--ds-font-body-ui);
   font-size: var(--ds-type-body-light-size);
   font-weight: 500;
   transition: color var(--ds-transition-fast);
+}
+
+.navbar__link,
+.table-of-contents__link,
+.pagination-nav__label,
+.pagination-nav__sublabel,
+.markdown p,
+.markdown li {
+  font-family: var(--ds-font-body-ui);
+}
+
+.button,
+button,
+.dev-portal-link,
+.footer__cta a,
+.navbar-book-demo {
+  font-family: var(--ds-font-body-ui);
+  font-weight: var(--ds-type-button-weight);
 }
 
 .menu__link {
@@ -355,11 +443,13 @@ html[data-theme='dark'] .new-badge::after {
    ============================================ */
 
 .footer__description {
+  font-family: var(--ds-font-body-ui);
   font-size: var(--ds-type-body-light-size);
   color: var(--ds-color-text-100);
 }
 
 .footer__copyright {
+  font-family: var(--ds-font-body-ui);
   margin-top: var(--ds-space-32);
   font-size: var(--ds-type-caption-size);
   color: var(--ds-color-text-100);
@@ -404,6 +494,7 @@ html[data-theme='dark'] .new-badge::after {
 }
 
 .footer__title {
+  font-family: var(--ds-font-code-label);
   font-size: var(--ds-type-code-label-size);
   font-weight: var(--ds-type-code-label-weight);
   letter-spacing: var(--ds-type-code-label-letter-spacing);
@@ -418,12 +509,14 @@ html[data-theme='dark'] .footer__title {
 }
 
 .footer__item {
+  font-family: var(--ds-font-body-ui);
   font-size: var(--ds-type-body-light-size);
   font-weight: 400;
   margin-bottom: var(--ds-space-8);
 }
 
 .footer__link-item {
+  font-family: var(--ds-font-body-ui);
   color: var(--ds-color-text-100);
   text-decoration: none;
   transition: color var(--ds-transition-fast);

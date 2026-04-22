@@ -13,7 +13,7 @@ import { steps, useStore } from './store';
 import { nodeTypes } from './nodes/nodeTypes';
 import  OnboardingPartTwo, { stepsTwo } from './OnboardingPartTwo';
 
-export const InteractiveTour = ({ href }: { href: string }) => {
+export const InteractiveTour = ({ href }) => {
   const history = useHistory();
   const [r, setR] = useState(false);
   const [meeting, initMeeting] = useDyteClient();

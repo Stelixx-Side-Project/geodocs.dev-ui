@@ -15,8 +15,8 @@ module.exports = {
         jakarta: ['"Plus Jakarta Sans"', ...fontFamily.sans],
         mono: ['"Fira Code"', ...fontFamily.mono],
         // Design System font families
-        'display-serif': ['MongoDB Value Serif', 'Georgia', 'serif'],
-        'body-ui': ['Euclid Circular A', 'Inter', 'system-ui', 'sans-serif'],
+        'display-serif': ['DM Serif Text', 'Times New Roman', 'serif'],
+        'body-ui': ['Plus Jakarta Sans', 'Work Sans', 'Inter', 'system-ui', 'sans-serif'],
         'code-label': ['Source Code Pro', 'Fira Code', 'monospace'],
       },
       borderRadius: {

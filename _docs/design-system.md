@@ -4,15 +4,15 @@
 
 MongoDB's website is a deep-forest-meets-terminal experience — a design system rooted in the darkest teal-black (`#001e2b`) that evokes both the density of a database and the depth of a forest canopy. Against this near-black canvas, a striking neon green (`#00ed64`) pulses as the brand accent — bright enough to feel electric, organic enough to feel alive. This isn't the cold neon of cyberpunk; it's the bioluminescent green of something growing in the dark.
 
-The typography system is architecturally ambitious: MongoDB Value Serif for massive hero headlines (96px) creates an editorial, authoritative presence — serif type at database-company scale is a bold choice that says "we're not just another tech company." Euclid Circular A handles the heavy lifting of body and UI text with an unusually wide weight range (300–700), while Source Code Pro serves as the code and label font with distinctive uppercase treatments featuring very wide letter-spacing (1px–3px). This three-font system creates a hierarchy that spans editorial elegance → geometric professionalism → engineering precision.
+The typography system is architecturally ambitious: DM Serif Text for massive hero headlines (96px) creates an editorial, authoritative presence — serif type at database-company scale is a bold choice that says "we're not just another tech company." Plus Jakarta Sans handles the heavy lifting of body and UI text with an unusually wide weight range (300–700), while Source Code Pro serves as the code and label font with distinctive uppercase treatments featuring very wide letter-spacing (1px–3px). This three-font system creates a hierarchy that spans editorial elegance → geometric professionalism → engineering precision.
 
 What makes MongoDB distinctive is its dual-mode design: a dark hero/feature section world (`#001e2b` with neon green accents) and a light content world (white with teal-gray borders `#b8c4c2`). The transition between these modes creates dramatic contrast. The shadow system uses teal-tinted dark shadows (`rgba(0, 30, 43, 0.12)`) that maintain the forest-dark atmosphere even on light surfaces. Buttons use pill shapes (100px–999px radius) with MongoDB Green borders (`#00684a`), and the entire component system references the LeafyGreen design system.
 
 **Key Characteristics:**
 - Deep teal-black backgrounds (`#001e2b`) — forest-dark, not space-dark
 - Neon MongoDB Green (`#00ed64`) as the singular brand accent — electric and organic
-- MongoDB Value Serif for hero headlines — editorial authority at tech scale
-- Euclid Circular A for body with weight 300 (light) as a distinctive body weight
+- DM Serif Text for hero headlines — editorial authority at tech scale
+- Plus Jakarta Sans for body with weight 300 (light) as a distinctive body weight
 - Source Code Pro with wide uppercase letter-spacing (1px–3px) for technical labels
 - Teal-tinted shadows: `rgba(0, 30, 43, 0.12)` — shadows carry the forest color
 - Dual-mode: dark teal hero sections + light white content sections
@@ -49,35 +49,35 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 ## 3. Typography Rules
 
 ### Font Families
-- **Display Serif**: `MongoDB Value Serif` — editorial hero headlines
-- **Body / UI**: `Euclid Circular A` — geometric sans-serif workhorse
+- **Display Serif**: `DM Serif Text` — editorial hero headlines
+- **Body / UI**: `Plus Jakarta Sans` — geometric sans-serif workhorse
 - **Code / Labels**: `Source Code Pro` — monospace with uppercase label treatments
-- **Fallbacks**: `Akzidenz-Grotesk Std` (with CJK: Noto Sans KR/SC/JP), `Times`, `Arial`, `system-ui`
+- **Fallbacks**: `Work Sans` (with CJK: Noto Sans KR/SC/JP), `Times`, `Arial`, `system-ui`
 
 ### Hierarchy
 
 | Role | Font | Size | Weight | Line Height | Letter Spacing | Notes |
 |------|------|------|--------|-------------|----------------|-------|
-| Display Hero | MongoDB Value Serif | 96px (6.00rem) | 400 | 1.20 (tight) | normal | Serif authority |
-| Display Secondary | MongoDB Value Serif | 64px (4.00rem) | 400 | 1.00 (tight) | normal | Serif sub-hero |
-| Section Heading | Euclid Circular A | 36px (2.25rem) | 500 | 1.33 | normal | Geometric precision |
-| Sub-heading | Euclid Circular A | 24px (1.50rem) | 500 | 1.33 | normal | Feature titles |
-| Body Large | Euclid Circular A | 20px (1.25rem) | 400 | 1.60 (relaxed) | normal | Introductions |
-| Body | Euclid Circular A | 18px (1.13rem) | 400 | 1.33 | normal | Standard body |
-| Body Light | Euclid Circular A | 16px (1.00rem) | 300 | 1.50–2.00 | normal | Light-weight reading text |
-| Nav / UI | Euclid Circular A | 16px (1.00rem) | 500 | 1.00–1.88 | 0.16px | Navigation, emphasized |
-| Body Bold | Euclid Circular A | 15px (0.94rem) | 700 | 1.50 | normal | Strong emphasis |
-| Button | Euclid Circular A | 13.5px–16px | 500–700 | 1.00 | 0.135px–0.9px | CTA labels |
-| Caption | Euclid Circular A | 14px (0.88rem) | 400 | 1.71 (relaxed) | normal | Metadata |
-| Small | Euclid Circular A | 11px (0.69rem) | 600 | 1.82 (relaxed) | 0.2px | Tags, annotations |
+| Display Hero | DM Serif Text | 96px (6.00rem) | 400 | 1.20 (tight) | normal | Serif authority |
+| Display Secondary | DM Serif Text | 64px (4.00rem) | 400 | 1.00 (tight) | normal | Serif sub-hero |
+| Section Heading | Plus Jakarta Sans | 36px (2.25rem) | 500 | 1.33 | normal | Geometric precision |
+| Sub-heading | Plus Jakarta Sans | 24px (1.50rem) | 500 | 1.33 | normal | Feature titles |
+| Body Large | Plus Jakarta Sans | 20px (1.25rem) | 400 | 1.60 (relaxed) | normal | Introductions |
+| Body | Plus Jakarta Sans | 18px (1.13rem) | 400 | 1.33 | normal | Standard body |
+| Body Light | Plus Jakarta Sans | 16px (1.00rem) | 300 | 1.50–2.00 | normal | Light-weight reading text |
+| Nav / UI | Plus Jakarta Sans | 16px (1.00rem) | 500 | 1.00–1.88 | 0.16px | Navigation, emphasized |
+| Body Bold | Plus Jakarta Sans | 15px (0.94rem) | 700 | 1.50 | normal | Strong emphasis |
+| Button | Plus Jakarta Sans | 13.5px–16px | 500–700 | 1.00 | 0.135px–0.9px | CTA labels |
+| Caption | Plus Jakarta Sans | 14px (0.88rem) | 400 | 1.71 (relaxed) | normal | Metadata |
+| Small | Plus Jakarta Sans | 11px (0.69rem) | 600 | 1.82 (relaxed) | 0.2px | Tags, annotations |
 | Code Heading | Source Code Pro | 40px (2.50rem) | 400 | 1.60 (relaxed) | normal | Code showcase titles |
 | Code Body | Source Code Pro | 16px (1.00rem) | 400 | 1.50 | normal | Code blocks |
 | Code Label | Source Code Pro | 14px (0.88rem) | 400–500 | 1.14 (tight) | 1px–2px | `text-transform: uppercase` |
 | Code Micro | Source Code Pro | 9px (0.56rem) | 600 | 2.67 (relaxed) | 2.5px | `text-transform: uppercase` |
 
 ### Principles
-- **Serif for authority**: MongoDB Value Serif at hero scale creates an editorial presence unusual in tech — it communicates that MongoDB is an institution, not a startup.
-- **Weight 300 as body default**: Euclid Circular A uses light (300) for body text, creating an airy reading experience that contrasts with the dense, dark backgrounds.
+- **Serif for authority**: DM Serif Text at hero scale creates an editorial presence unusual in tech — it communicates that MongoDB is an institution, not a startup.
+- **Weight 300 as body default**: Plus Jakarta Sans uses light (300) for body text, creating an airy reading experience that contrasts with the dense, dark backgrounds.
 - **Wide-tracked monospace labels**: Source Code Pro uppercase at 1px–3px letter-spacing creates technical signposts that feel like database field labels — systematic, structured, classified.
 - **Four-weight range**: 300 (light body) → 400 (standard) → 500 (UI/nav) → 700 (bold CTA) — a wider range than most systems, enabling fine-grained hierarchy.
 
@@ -122,7 +122,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 
 ### Navigation
 - Dark header on forest-black background
-- Euclid Circular A 16px weight 500 for nav links
+- Plus Jakarta Sans 16px weight 500 for nav links
 - MongoDB logo (leaf icon + wordmark) left-aligned
 - Green CTA pill buttons right-aligned
 - Mega-menu dropdowns with product categories
@@ -192,7 +192,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 ### Do
 - Use `#001e2b` (forest-black) for dark sections — not pure black
 - Apply MongoDB Green (`#00ed64`) sparingly for maximum electric impact
-- Use MongoDB Value Serif ONLY for hero/display headings — Euclid Circular A for everything else
+- Use DM Serif Text ONLY for hero/display headings — Plus Jakarta Sans for everything else
 - Apply Source Code Pro uppercase with wide tracking (1px–3px) for technical labels
 - Use teal-tinted shadows (`rgba(0,30,43,0.12)`) for primary card elevation
 - Maintain the dark/light section duality — dramatic contrast between modes
@@ -203,7 +203,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Don't use pure black (`#000000`) for dark backgrounds — always use teal-black (`#001e2b`)
 - Don't use MongoDB Green (`#00ed64`) on backgrounds — it's an accent for text, underlines, and small highlights
 - Don't use standard gray shadows — always use teal-tinted (`rgba(0,30,43,...)`)
-- Don't apply serif font to body text — MongoDB Value Serif is hero-only
+- Don't apply serif font to body text — DM Serif Text is hero-only
 - Don't use narrow letter-spacing on Source Code Pro labels — the wide tracking IS the identity
 - Don't mix dark and light section treatments within the same section
 - Don't use warm colors — the palette is strictly cool (teal, green, blue)
@@ -227,7 +227,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Card surfaces as full-area touch targets
 
 ### Collapsing Strategy
-- Hero: MongoDB Value Serif 96px → 64px → scales further
+- Hero: DM Serif Text 96px → 64px → scales further
 - Navigation: horizontal mega-menu → hamburger
 - Feature cards: multi-column → stacked
 - Dark/light sections maintain their mode at all sizes
@@ -251,8 +251,8 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 - Border dark: Teal Gray (`#3d4f58`)
 
 ### Example Component Prompts
-- "Create a hero on forest-black (#001e2b) background. Headline at 96px MongoDB Value Serif weight 400, line-height 1.20, white text with 'potential' highlighted in MongoDB Green (#00ed64). Subtitle at 18px Euclid Circular A weight 400. Green pill CTA (#00684a, 100px radius). Neon green gradient glow behind product screenshot."
-- "Design a card on white background: 1px solid #b8c4c2 border, 16px radius, shadow rgba(0,30,43,0.12) 0px 26px 44px. Title at 24px Euclid Circular A weight 500. Body at 16px weight 300. Source Code Pro 14px uppercase label above title with 2px letter-spacing."
+- "Create a hero on forest-black (#001e2b) background. Headline at 96px DM Serif Text weight 400, line-height 1.20, white text with 'potential' highlighted in MongoDB Green (#00ed64). Subtitle at 18px Plus Jakarta Sans weight 400. Green pill CTA (#00684a, 100px radius). Neon green gradient glow behind product screenshot."
+- "Design a card on white background: 1px solid #b8c4c2 border, 16px radius, shadow rgba(0,30,43,0.12) 0px 26px 44px. Title at 24px Plus Jakarta Sans weight 500. Body at 16px weight 300. Source Code Pro 14px uppercase label above title with 2px letter-spacing."
 - "Build a dark section: #001e2b background, 1px solid #3d4f58 border on cards. White text. MongoDB Green (#00ed64) accent underlines on headings using bottom-border 2px solid."
 - "Create technical label: Source Code Pro 14px, text-transform uppercase, letter-spacing 2px, weight 500, #00ed64 color on dark background."
 - "Design a pill button: #1c2d38 background, 1px solid #3d4f58 border, 100px radius, #5c6c75 text. Hover: #1eaedb background, white text, translateX(5px)."
@@ -260,7 +260,7 @@ What makes MongoDB distinctive is its dual-mode design: a dark hero/feature sect
 ### Iteration Guide
 1. Start with the mode decision: dark (#001e2b) for hero/features, white for content
 2. MongoDB Green (#00ed64) is electric — use once per section for maximum impact
-3. Serif headlines (MongoDB Value Serif) create the editorial authority — never use for body
+3. Serif headlines (DM Serif Text) create the editorial authority — never use for body
 4. Weight 300 body text creates the airy reading experience — don't default to 400
 5. Source Code Pro uppercase with wide tracking for technical labels — the database voice
 6. Teal-tinted shadows keep everything in the MongoDB color world

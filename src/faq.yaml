@@ -29,7 +29,7 @@
     - Web: Javascript Core SDK + UI Kit for React JS, Angular, Web Components for everything else
     - Desktop: Electron
 
-    For more information, see [Dyte docs](/)
+    For more information, see [Geodocs](/)
 
 - question: What businesses can use Dyte?
   tags: ['General']
@@ -64,12 +64,12 @@
     The Dyte Core SDKs are designed to provide developers with an easy way to incorporate real-time communication (RTC) solutions into their apps and websites. With full customization and branding options, you can build your own UI from the ground up without dealing with complicated media layers. 
 
     The Core SDK acts as a data-only layer, offering high-level primitives and abstracting away complex media and networking optimizations. It only provides simple APIs that are user-friendly and easy to work with.
-    See [Dyte docs](/).
+    See [Geodocs](/).
 
 - question: What is the UI Kit?
   tags: ['General']
   answer: |-
-    Dyte's React UI Kit is a prebuilt design library of UI components that makes it easy to integrate video and voice calls into any app or website within minutes. See [Dyte docs](/react-ui-kit).
+    Dyte's React UI Kit is a prebuilt design library of UI components that makes it easy to integrate video and voice calls into any app or website within minutes. See [Geodocs](/react-ui-kit).
 
 - question: What is the Plugin SDK?
   tags: ['General']

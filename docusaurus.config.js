@@ -7,7 +7,7 @@ const code_themes = {
 
 /** @type {import('@docusaurus/types').Config} */
 const meta = {
-  title: 'Dyte Docs',
+  title: 'Geodocs',
   tagline:
     'Explore comprehensive documentation for Dyte, including guides, references, and best practices.',
   url: 'https://geodocs.dev',
@@ -448,10 +448,6 @@ const resourcesHTML = fs.readFileSync('./src/snippets/resources.html', 'utf-8');
 const config = {
   ...meta,
   plugins,
-  future: {
-    faster: true, v4: true,
-  },
-
   trailingSlash: false,
   themes: ['@docusaurus/theme-live-codeblock', '@docusaurus/theme-mermaid'],
   clientModules: [
@@ -508,7 +504,7 @@ const config = {
           href: '/',
           src: '/logo/light.svg',
           srcDark: '/logo/dark.svg',
-          alt: 'Dyte Documentation | Dyte Docs',
+          alt: 'Dyte Documentation | Geodocs',
           height: '40px',
           width: '101px',
         },
@@ -574,7 +570,7 @@ const config = {
           href: '/',
           src: '/logo/light.svg',
           srcDark: '/logo/dark.svg',
-          alt: 'Dyte Documentation | Dyte Docs',
+          alt: 'Dyte Documentation | Geodocs',
           height: '36px',
         },
         links: [
@@ -659,8 +655,8 @@ const config = {
         ],
       },
       algolia: {
-        appId: 'HL0HSV62RK',
-        apiKey: '72ebf02146698733b7114c7b36da0945',
+        appId: 'W0TX9LLT6O',
+        apiKey: 'd31f5d3111662bf5c1a73f56db7eb47f',
         indexName: 'docs',
         contextualSearch: true,
         searchParameters: {},

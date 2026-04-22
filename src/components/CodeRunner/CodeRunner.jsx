@@ -11,29 +11,7 @@ import AngularBoilerplate from './AngularBoilerplate';
 import { useColorMode } from '@docusaurus/theme-common';
 import { atomDark, aquaBlue } from "@codesandbox/sandpack-themes";
 
-type FrameworkType = 'react-ts' | 'angular';
-type HighlightLines = {
-  start: number,
-  end: number,
-};
-type CodeRunnerProps = {
-  files?: { [key: string]: string },
-  file?: string,
-  framework?: FrameworkType,
-  entry?: string,
-  highlight?: HighlightLines[],
-  additionalDecorators?: any[],
-  hide?: HighlightLines[],
-  minHeight?: string
-};
-
-type GetFilesReturn = {
-  files: { [key: string]: string },
-  activeFile: string,
-  visibleFiles: string[],
-  scripts: string[],
-}
-const getFiles = (framework: FrameworkType, colorMode: string, customFile: string, files: { [key: string]: string } = {}): GetFilesReturn => {
+const getFiles = (framework, colorMode, customFile, files = {}) => {
   if (framework == 'react-ts') {
     return {
       files: { 
@@ -70,7 +48,7 @@ const getFiles = (framework: FrameworkType, colorMode: string, customFile: strin
   }
 };
 
-const getDeps = (framework: FrameworkType): { [key: string]: string } => {
+const getDeps = (framework) => {
   if (framework == 'react-ts') {
     return {
       '@dytesdk/react-ui-kit': '1.66.0',
@@ -87,8 +65,8 @@ const getDeps = (framework: FrameworkType): { [key: string]: string } => {
   return {};
 };
 
-const buildDecorators = (lines: HighlightLines[], hide: HighlightLines[]) => {
-  let cols: any[] = [];
+const buildDecorators = (lines, hide) => {
+  let cols = [];
   lines.forEach((l) => {
     for (let i = l.start; i <= l.end; i++) {
       cols.push({ className: 'highlight', line: i });
@@ -102,7 +80,7 @@ const buildDecorators = (lines: HighlightLines[], hide: HighlightLines[]) => {
   return cols;
 };
 
-const getTheme = (theme: string) => {
+const getTheme = (theme) => {
   if(theme === 'light') return aquaBlue;
   else return atomDark;
 }
@@ -116,7 +94,7 @@ export default function CodeRunner({
   additionalDecorators = [],
   hide = [],
   minHeight = '480px'
-}: CodeRunnerProps) {
+}) {
   const { colorMode } = useColorMode();
 
   const filesObj = getFiles(framework, colorMode, file ?? '', files)

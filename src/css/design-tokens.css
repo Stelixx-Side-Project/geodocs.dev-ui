@@ -43,8 +43,8 @@
     /* ============================================
        TYPOGRAPHY - Font Families
        ============================================ */
-    --ds-font-display-serif: 'MongoDB Value Serif', Georgia, serif;
-    --ds-font-body-ui: 'Euclid Circular A', 'Inter', system-ui, -apple-system, sans-serif;
+    --ds-font-display-serif: 'DM Serif Text', 'Times New Roman', serif;
+    --ds-font-body-ui: 'Plus Jakarta Sans', 'Work Sans', 'Inter', system-ui, -apple-system, sans-serif;
     --ds-font-code-label: 'Source Code Pro', 'Fira Code', monospace;
 
     /* ============================================
